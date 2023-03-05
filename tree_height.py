@@ -47,9 +47,6 @@ def main():
                         ans = compute_height(n, parents)
                         print(ans)
                         ok = False
-         else:
-            print("Ooooops, something not cool:(")
-            exit()
                     
 
      
