@@ -26,8 +26,8 @@ def compute_height(n, parents):
 
 
 def main():
-    # implement input form keyboard and from files
     fileorno = input()
+    
     if "I" in fileorno or "i" in fileorno:
         n = int(input())
         parents = list(map(int, input().split()))
@@ -39,12 +39,12 @@ def main():
                 # account for github input inprecision
     elif "F" in fileorno or "f" in fileorno:
         file =input()
-        if "a" not in file:
-            with open("test/" + file, 'r')as f:
-                    n = int(file.readline())
-                    parents = list(map(int, input().split()))
-                    ans = compute_height(n, parents)
-                    print(ans)
+        #if "a" not in file:
+        with open("test/" + file, 'r')as f:
+                n = int(file.readline())
+                parents = list(map(int, input().split()))
+                ans = compute_height(n, parents)
+                print(ans)
                     
 
      
