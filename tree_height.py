@@ -38,15 +38,18 @@ def main():
             
                 # let user inputfile name to use, don't allow file names with letter a
                 # account for github input inprecision
-        if "F" in fileorno or "f" in fileorno:
+        elif "F" in fileorno or "f" in fileorno:
             file =input()
             if "a" not in file:
-                with open(file)as f:
+                with open("test/" + file, 'r')as f:
                         n = int(file.readline())
                         parents = list(map(int, input().split()))
                         ans = compute_height(n, parents)
                         print(ans)
                         ok = False
+         else:
+            print("Ooooops, something not cool:(")
+            exit()
                     
 
      
