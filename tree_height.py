@@ -26,11 +26,11 @@ def compute_height(n, parents):
 
 def main():
     # implement input form keyboard and from files
-    fileorno = input("i or f")
+    fileorno = input()
     ok = True
     while ok:
         if fileorno == "I":
-            n = int(input("nodes"))
+            n = int(input())
             parents = list(map(int, input().split()))
             ans = compute_height(n, parents)
             print(ans)
