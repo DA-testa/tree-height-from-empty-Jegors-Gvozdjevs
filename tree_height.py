@@ -8,7 +8,7 @@ def compute_height(n, parents):
     list = [[] for _ in range(n)]
     for i, parent in enumerate(parents):
         if parent == -1:
-            r = i
+            ro = i
         else:
             list[parent].append(i)
     max_height = 0
@@ -20,7 +20,8 @@ def compute_height(n, parents):
             max_depth = max(max_depth, child_depth)
         return max_depth
 
-    max_height = nodes(r)    
+
+    max_height = nodes(ro)    
     return max_height + 1
 
 
