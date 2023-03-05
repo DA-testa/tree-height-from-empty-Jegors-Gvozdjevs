@@ -41,7 +41,7 @@ def main():
         if "I" in fileorno or "i" in fileorno:
             file =input()
             if "a" not in file:
-                with open("test/" + file, 'r')as f:
+                with open(file)as f:
                         n = int(file.readline())
                         parents = list(map(int, input().split()))
                         ans = compute_height(n, parents)
