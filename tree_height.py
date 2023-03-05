@@ -39,7 +39,7 @@ def main():
         if "a" not in file:
             with open("test/" + file, 'r')as f:
                 n = int(f.readline())
-                parents = list(map(int, input().split()))
+                parents = list(map(int, f.readline().split()))
                 ans = compute_height(n, parents)
                 print(ans)
 
