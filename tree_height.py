@@ -29,7 +29,7 @@ def main():
     fileorno = input()
     ok = True
     while ok:
-        if fileorno == "I":
+        if "I" in fileorno or "i" in fileorno:
             n = int(input())
             parents = list(map(int, input().split()))
             ans = compute_height(n, parents)
@@ -38,7 +38,7 @@ def main():
             
                 # let user inputfile name to use, don't allow file names with letter a
                 # account for github input inprecision
-        if "I" in fileorno or "i" in fileorno:
+        if "F" in fileorno or "f" in fileorno:
             file =input()
             if "a" not in file:
                 with open(file)as f:
